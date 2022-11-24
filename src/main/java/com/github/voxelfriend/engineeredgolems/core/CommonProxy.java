@@ -160,18 +160,14 @@ public class CommonProxy {
         ScanningManager.addScannableThing(
                 new ScanItem(
                         "f_EG_STEEL",
-                        new ItemStack(
-                        		IEContent.blockStorage,
-                                1,
-                                8
-                        )
+                        "blockSteel"
                 )
         );
 
         ScanningManager.addScannableThing(
                 new ScanBlockState(
                         "f_EG_STEEL",
-                        IEContent.blockStorage.getStateFromMeta(8),
+                        "blockSteel",
                         false
                 )
         );
