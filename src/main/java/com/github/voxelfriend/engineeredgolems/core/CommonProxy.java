@@ -130,13 +130,9 @@ public class CommonProxy {
         );
     	
         ScanningManager.addScannableThing(
-                new ScanItem(
+                new ScanOreDictionary(
                         "f_EG_TREATEDWOOD",
-                        new ItemStack(
-                        		IEContent.blockTreatedWood,
-                                1,
-                                0
-                        )
+                        "plankTreatedWood"
                 )
         );
         ScanningManager.addScannableThing(
@@ -148,27 +144,11 @@ public class CommonProxy {
                         )
                 )
         );
-
-        ScanningManager.addScannableThing(
-                new ScanBlockState(
-                        "f_EG_TREATED_WOOD",
-                        IEContent.blockTreatedWood.getStateFromMeta(0),
-                        false
-                )
-        );
         
         ScanningManager.addScannableThing(
-                new ScanItem(
+                new ScanOreDictionary(
                         "f_EG_STEEL",
                         "blockSteel"
-                )
-        );
-
-        ScanningManager.addScannableThing(
-                new ScanBlockState(
-                        "f_EG_STEEL",
-                        "blockSteel",
-                        false
                 )
         );
         
